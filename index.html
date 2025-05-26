@@ -7,39 +7,37 @@
     <link rel="icon" href="img/logo_000052359.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./style/style-mobile.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
     <header class="cabecalho">
-    <nav>
+    <nav class="link_cabecalho">
         <a class="links" href="#sobre">Sobre</a>
-        <a class="links" href="#serviços">Contato</a>
-        <a class="links" href="#galeria">Nosso Serviços</a>
-        <a class="links" href="#contato">Agendamento</a>
+        <a class="links" href="#contato">Contato</a>
+        <a class="links" href="#galeria">Galeria</a>
+        <a class="links" href="#Avaliacoes">Avaliações</a> 
     </nav>
-
-    <div>
-        <img class="img_cabecalho" src="img/Capa3.png" alt="Logo CrossBarber">
-    </div>
-
-    <div class="whatsapp-header">
-        <a href="https://wa.me/5599999999999" target="_blank">
-            <img src="img/whatsapp-icon.png" alt="WhatsApp">
-        </a>
+    <div class="cabecalho_container">
+            <img class="img_cabecalho_logo" src="img/logo_0.PNG" alt="Logo CrossBarber">
+            <div class="whatsapp-header">
+            <a href="https://wa.me/5511910495578" target="_blank">
+                <img src="img/whatsapp-icon.png" alt="WhatsApp">
+            </a>
     </div>
 </header>
     <section id="sobre">
+        <div class="sobre-txt">
         <h2>Nossa História</h2>
         <p>Bem-vindo a CrossBarber Barbearia, onde a tradição do barber clássico se encontra com a modernidade. Desde 2020, nossa missão tem sido proporcionar um serviço excepcional, em um ambiente familiar e aconchegante com muito profissionalismo.</p>
+        </div>
     </section>
 
-    <section id="servicos" data-aos="fade-up">
-        <h2>Serviços</h2>
+    <section class="servicos" id="servicos" data-aos="fade-up">
+        <h2>Nossos Serviços</h2>
         <div class="cards">
             <div class="card">
                 <h3>Corte de Cabelo</h3>
@@ -50,8 +48,20 @@
                 <p>Modelagem, aparo e hidratação.</p>
             </div>
             <div class="card">
-                <h3>Tratamentos</h3>
+                <h3>Combo</h3>
                 <p>Cuidado completo para cabelo e barba.</p>
+            </div>
+            <div class="card">
+                <h3>Sombrancelha</h3>
+                <p>Alinhamento e desenho.</p>
+            </div>
+            <div class="card">
+                <h3>Pezinho</h3>
+                <p>Cuidado para manter seu corte sempre alinhado.</p>
+            </div>
+            <div class="card">
+                <h3>Raspado completo</h3>
+                <p>Seu cabelo raspado por completo.</p>
             </div>
         </div>
     </section>
@@ -59,16 +69,27 @@
     <section id="galeria">
         <h2>Galeria</h2>
         <div class="galeria">
-            <img src="img/boneco-1.png" alt="Foto 1">
-            <img src="img/boneco-1.png" alt="Foto 2">
-            <img src="img/boneco-1.png" alt="Foto 3">
+            <img src="img/Galeria/Barba 1.jpeg" alt="Foto 1">
+            <img src="img/Galeria/Barba 2.jpeg" alt="Foto 2">
+            <img src="img/Galeria/Barba-terapia.jpeg" alt="Foto 3">
+            <img src="img/Galeria/corte de cabelo.jpeg" alt="Foto 4">
+            <img src="img/Galeria/Maquina.jpeg" alt="Foto 5">
         </div>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato pelo WhatsApp!</p>
-        <a href="https://wa.me/5599999999999" class="btn-whatsapp" target="_blank">Agendar via WhatsApp</a>
+    <section class="contato">
+        <h2 class="contato-titulo">Contato</h2>
+        <div class="contato-conteudo">
+            <div class="contato-info">
+                <p class="contato-endereco">Rua Maranbaia, 319 - Casa Verde - São Paulo/SP</p>
+                <p>Entre em contato pelo WhatsApp!</p>
+                <a href="https://wa.me/5511910495578" class="btn-whatsapp" target="_blank">Agendar via WhatsApp</a>
+            </div>
+            <div class="contato-mapa">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
     </section>
 
     <footer>
