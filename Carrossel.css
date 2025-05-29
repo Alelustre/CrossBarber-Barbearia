@@ -1,0 +1,39 @@
+.carousel-container {
+  position: relative;
+  width: 600px; /* ajuste conforme necessário */
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.carousel-track img {
+  width: 200px; /* 3 imagens = 600 / 3 */
+  flex-shrink: 0;
+  padding: 1.2%;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-button.left {
+  left: 0;
+}
+
+.carousel-button.right {
+  right: 0;
+  
+}

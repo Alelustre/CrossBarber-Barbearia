@@ -6,13 +6,14 @@
     <title>Cross Barber Barbearia</title>
     <link rel="icon" href="img/logo_000052359.jpg">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style/style-mobile.css">
+    <link rel="stylesheet" href="Carrossel.css">
+    <link rel="stylesheet" href="style-mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-
 <body>
     <header class="cabecalho">
     <nav class="link_cabecalho">
@@ -21,23 +22,25 @@
         <a class="links" href="#galeria">Galeria</a>
         <a class="links" href="#Avaliacoes">Avaliações</a> 
     </nav>
-    <div class="cabecalho_container">
-            <img class="img_cabecalho_logo" src="img/logo_0.PNG" alt="Logo CrossBarber">
-            <div class="whatsapp-header">
+    <div class="h-box">
+        <div class="logo">
+            <img class="img_cabecalho_logo" src="img/logo_0.PNG" alt="Logo CrossBarber"/>
+        </div>
+        <div class="whatsapp-header">
             <a href="https://wa.me/5511910495578" target="_blank">
-                <img src="img/whatsapp-icon.png" alt="WhatsApp">
+                <img src="img/whatsapp-icon.png" alt="WhatsApp" />
             </a>
+        </div>
     </div>
 </header>
     <section id="sobre">
         <div class="sobre-txt">
-        <h2>Nossa História</h2>
+        <h2 class="sobre-title">Nossa História</h2>
         <p>Bem-vindo a CrossBarber Barbearia, onde a tradição do barber clássico se encontra com a modernidade. Desde 2020, nossa missão tem sido proporcionar um serviço excepcional, em um ambiente familiar e aconchegante com muito profissionalismo.</p>
         </div>
     </section>
-
     <section class="servicos" id="servicos" data-aos="fade-up">
-        <h2>Nossos Serviços</h2>
+        <h2 class="title_service">Nossos Serviços</h2>
         <div class="cards">
             <div class="card">
                 <h3>Corte de Cabelo</h3>
@@ -52,7 +55,7 @@
                 <p>Cuidado completo para cabelo e barba.</p>
             </div>
             <div class="card">
-                <h3>Sombrancelha</h3>
+                <h3>Sombracelha</h3>
                 <p>Alinhamento e desenho.</p>
             </div>
             <div class="card">
@@ -64,19 +67,36 @@
                 <p>Seu cabelo raspado por completo.</p>
             </div>
         </div>
-    </section>
-
+    </section>   
     <section id="galeria">
         <h2>Galeria</h2>
         <div class="galeria">
-            <img src="img/Galeria/Barba 1.jpeg" alt="Foto 1">
-            <img src="img/Galeria/Barba 2.jpeg" alt="Foto 2">
-            <img src="img/Galeria/Barba-terapia.jpeg" alt="Foto 3">
-            <img src="img/Galeria/corte de cabelo.jpeg" alt="Foto 4">
-            <img src="img/Galeria/Maquina.jpeg" alt="Foto 5">
+            <div class="carousel-container">
+            <button class="carousel-button left" onclick="scrollCarousel(-1)">❮</button>
+            <div class="carousel-track">
+            <img src="img/Galeria/Barba 1.jpeg" alt="Barba1">
+            <img src="img/Galeria/Barba 2.jpeg" alt="Barba2">
+            <img src="img/Galeria/Barba-terapia.jpeg" alt="Barbaterapia">
+            <img src="img/Galeria/corte de cabelo.jpeg" alt="Corte de cabelo">
+            <img src="img/Galeria/Maquina.jpeg" alt="Maquina">
+            </div>
+            <button class="carousel-button right" onclick="scrollCarousel(1)">❯</button>
+            </div>
         </div>
     </section>
-
+    <section>
+        <h2 class="avaliacao-title">Avaliações</h2>
+        <div class="swiper animate__animated animate__fadeInUp">
+            <div class="avaliacao-box">
+                <img src="img/Avaliacao/avaliacao1.jpeg" alt="Avaliações de clientes" class="avaliacao-img">
+                <h3>Rosi Aparecida</h3>
+                <img src="img/Avaliacao/avaliacao2.jpeg" alt="Avaliações de clientes" class="avaliacao-img">
+                <img src="img/Avaliacao/avaliacao3.jpeg" alt="Avaliações de clientes" class="avaliacao-img">
+                <img src="img/Avaliacao/avaliacao4.jpeg" alt="Avaliações de clientes" class="avaliacao-img">
+                <img src="img/Avaliacao/avaliacao5.jpeg" alt="Avaliações de clientes" class="avaliacao-img">
+            </div>
+        </div>
+    </section>
     <section class="contato">
         <h2 class="contato-titulo">Contato</h2>
         <div class="contato-conteudo">
@@ -91,24 +111,10 @@
             </div>
         </div>
     </section>
-
     <footer>
         <p>© 2025 CrossBarber Barbearia. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 </html>

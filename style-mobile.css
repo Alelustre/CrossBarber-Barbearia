@@ -1,6 +1,18 @@
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 600px) {
+    .cabecalho {
+        height: auto;
+        min-height: auto;
+    }
+
+    .link_cabecalho {
+        color: aqua;
+
+    }
+  
+    .h-box {
+        width: 100%;
+        min-height: 250px;
+        border-radius: 1em;
+        gap: 10px;
     }
 }
