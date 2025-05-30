@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 80px
+    gap: 0.8px
 }
 
 .cabecalho nav {
@@ -165,10 +165,14 @@ section p {
 }
 
 .card {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
     background-color: var(--branco-base);
     padding: 2rem;
     border-radius: 10px;
     width: 250px;
+    height: 100%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     transition: transform 0.3s, background 0.3s;
 }
@@ -179,13 +183,13 @@ section p {
 }
 
 .card h3 {
+    width: 100%;
     color: var(--cinza-escuro);
     margin-bottom: 0.5rem;
 }
 
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
     gap: 1rem;
     margin-top: 2rem;
     background: var(--azul-petroleo);
@@ -230,3 +234,216 @@ footer {
     color: var(--dourado-suave);
     font-size: 1.0rem;
 }
+
+
+
+
+
+/*************************
+Cabeçalho
+**************************/
+.cabecalho {
+    height: 90vh;
+    min-height: 640px;
+}
+.h-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 2em;
+    background-image: url(img/img-barber-fundo.PNG);
+    background-size: cover;
+    background-position: left 21%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.h-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+}
+.h-box .logo {
+    position: relative;
+    z-index: 5;
+    max-width: 480px;
+    width: 50%;
+    padding: 5% 10px;
+}
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 780px) {
+    .cabecalho {
+        height: auto;
+        min-height: auto;
+    }
+    .h-box {
+        width: 100%;
+        min-height: 250px;
+        border-radius: 1em;
+    }
+}
+
+
+/*************************
+Carrossel
+**************************/
+
+.cards {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.cards .slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.cards .slick-track .slick-slide {
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+.carrossel {
+    /* border: 2px solid red; */
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+    padding: 20px 0;
+}
+
+.slick-initialized .slick-slide {
+    padding: 0 10px;
+}
+.slick-initialized .slick-slide img {
+    max-height: 250px;
+    
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.slick-prev, .slick-next {
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: var(--branco-base) !important;
+    transition: all 300ms ease-in-out;
+}
+.slick-prev:before, .slick-next:before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    border: 2px solid var(--azul-petroleo);
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.slick-prev {
+    left: -45px;
+}
+.slick-prev:before {
+    left: calc(50% + 3px);
+    border-top: none;
+    border-right: none;
+}
+.slick-next {
+    right: -45px;
+}
+.slick-next:before {
+    left: calc(50% - 3px);
+    border-bottom: none;
+    border-left: none;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background: rgba(255, 225, 225, 0.6) !important;
+}
+
+.slick-dots {
+    bottom: 0;
+}
+.slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+.slick-dots li button {
+    width: 100%;
+    height: 100%;
+}
+.slick-dots li button:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--branco-base);
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+.avaliacao {
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--azul-petroleo);
+    border-radius: 15px;
+}
+
+.avaliacao-cliente {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: var(--branco-base);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s, background 0.3s;
+}
+
+svg {
+    width: 25%;
+    height: 25%;
+    color: var(--dourado-suave); 
+}
+
+.avaliacao-cliente p {
+    font-size: 16px;
+}
+
+.avaliacao-cliente h5 {
+    font-size: 18px;
+    color: var(--cinza-escuro);
+}
+
+.avaliacao .slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.avaliacao .slick-track .slick-slide {
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--branco-base);
+    border-radius: 10px;
+}
+
