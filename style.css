@@ -146,7 +146,7 @@ img {
 }
 
 section {
-    padding: 6rem 2rem;
+    /* padding: 6rem 2rem; */
     text-align: center;
 }
 
@@ -457,7 +457,7 @@ svg {
 
 .avaliacao .slick-track .slick-slide {
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
