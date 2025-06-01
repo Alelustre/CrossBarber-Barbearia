@@ -9,16 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
-    
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- <script type="text/javascript" src="slick.js"></script> -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <link rel="stylesheet" href="style.css"> 
+    
 
 </head>
 <body>
@@ -46,7 +44,10 @@
         <h2 class="sobre-title">Nossa História</h2>
         <p>Bem-vindo a CrossBarber Barbearia, onde a tradição do barber clássico se encontra com a modernidade. Desde 2020, nossa missão tem sido proporcionar um serviço excepcional, em um ambiente familiar e aconchegante com muito profissionalismo.</p>
         </div>
-    <section class="servicos" id="servicos" data-aos="fade-up">
+    </section>
+
+    <section class="servicos" id="servicos">
+        <h2 class="title-service">Nossos Serviços</h2>
         <div class="cards">
             <div>
                 <div class="card">
@@ -88,7 +89,7 @@
         </div>
     </section>   
     <section id="galeria">
-        <h2>Galeria</h2>
+        <h2 class="title-galeria">Galeria</h2>
         <div class="galeria">
             <div class="carrossel">
                 <div><img src="img/Galeria/Barba 1.jpeg" alt="Foto 1"></div>
@@ -100,7 +101,7 @@
         </div>
     </section>
     <section class="avaliacao-max" id="avaliacao">
-        <h2>Avaliações</h2>
+        <h2 class="title-avaliacao">Avaliações</h2>
         <div class="avaliacao">
                 <div class="avaliacao-cliente">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
@@ -140,21 +141,24 @@
         </div>
     </section>
     <section class="contato">
-        <h2 class="contato-titulo">Contato</h2>
-        <div class="contato-conteudo">
-            <div class="contato-info">
-                <p class="contato-endereco">Rua Maranbaia, 319 - Casa Verde - São Paulo/SP</p>
-                <p>Entre em contato pelo WhatsApp!</p>
-                <a href="https://wa.me/5511910495578" class="btn-whatsapp" target="_blank">Agendar via WhatsApp</a>
-            </div>
-            <div class="map-container">
-                <iframe 
-                src="https://www.google.com/maps?q=Rua+Marambaia,319,Casa+Verde,São+Paulo&output=embed" 
-                allowfullscreen 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+        <h2 class="title-contato">Contato</h2>
+        <div class="conteudo-contato">
+           
+                <div class="contato-info">
+                    <p class="contato-endereco">Rua Marambaia, 319 - Casa Verde - São Paulo/SP</p>
+                    <p class="contato-endereco">Entre em contato pelo WhatsApp!</p>
+                    <a href="https://wa.me/5511910495578" class="btn-whatsapp" target="_blank">Agendar via WhatsApp</a>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                    src="https://www.google.com/maps?q=Rua+Marambaia,319,Casa+Verde,São+Paulo&output=embed" 
+                    style="width: 180%; height: 400px; border:0;"
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            
         </div>
     </section>
     <footer>
