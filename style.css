@@ -369,6 +369,14 @@ img {
 }
 
 @media screen and (max-width: 780px) {
+    .section {
+        padding: 3rem 2rem
+    }
+
+    .element.style {
+        height: 320px;
+    }
+
     .cabecalho {
         height: auto;
         min-height: auto;
@@ -382,7 +390,42 @@ img {
         width: 100%;
         min-height: 250px;
         border-radius: 1em;
+        gap: 30px;
     }
+
+    .card {
+        padding: 2rem;
+        height: 60%;
+        width: 260px;
+    
+    }
+
+    .slick-list .draggable {
+        height: 220px;
+    }
+
+    .cards {
+        margin-top: 0;
+    }
+ 
+    .avaliacao .slick-track .slick-slide {
+        height: 100%;
+    }
+
+    .contato-info {
+        width: 100%;
+    }
+
+    .btn-whatsapp {
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .map-container {
+        width: 100%
+
+    }
+
 }
 
 /*************************

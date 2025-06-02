@@ -14,4 +14,8 @@
         border-radius: 1em;
     }
 
+.cards .slick-track .slick-slide {
+    height: 65%;
+}
+
 }
