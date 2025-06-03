@@ -1,3 +1,6 @@
+@import url(style-mobile.css);
+
+
 :root {
   --preto-azulado: #0A0D12;
   --cinza-escuro: #12161C;
@@ -9,10 +12,7 @@
   --verde-whatsaap: #25D366;
   --cor--rgb: rgb(42, 109, 118);
 
-  --fonte1: font-family: "Montserrat", sans-serif;
-  --fonte2: font-family: "Orbitron", sans-serif;
-  --fonte3: font-family: "Poppins", sans-serif;
-
+  --fonte1: font-family: "WDXL Lubrifont TC", sans-serif;
 }
 
 * {
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    font-family:var(--fonte3);
+    font-family:var(--fonte1);
     line-height: 1.6;
     background-color: var(--branco-suave);
     color: var(--branco-neve);
@@ -40,7 +40,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 90vh;
-    min-height: 640px;
+    min-height: 340px;
+    
     
 }
 
@@ -52,10 +53,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.8px
-}
-
-.cabecalho nav {
-    margin-bottom: 1rem;
 }
 
 .whatsapp-header {
@@ -88,7 +85,7 @@ body {
 }
 
 .links {
-    margin: 0 1rem;
+    margin: 1rem;
     text-decoration: none;
     color: var(--branco-suave);
     font-weight: 500;
@@ -368,66 +365,6 @@ img {
     height: auto;
 }
 
-@media screen and (max-width: 780px) {
-    .section {
-        padding: 3rem 2rem
-    }
-
-    .element.style {
-        height: 320px;
-    }
-
-    .cabecalho {
-        height: auto;
-        min-height: auto;
-    }
-    .h-box {
-        width: 100%;
-        min-height: 250px;
-        border-radius: 1em;
-    }
-    .conteudo-contato {
-        width: 100%;
-        min-height: 250px;
-        border-radius: 1em;
-        gap: 30px;
-    }
-
-    .card {
-        padding: 2rem;
-        height: 60%;
-        width: 260px;
-    
-    }
-
-    .slick-list .draggable {
-        height: 220px;
-    }
-
-    .cards {
-        margin-top: 0;
-    }
- 
-    .avaliacao .slick-track .slick-slide {
-        height: 100%;
-    }
-
-    .contato-info {
-        width: 100%;
-    }
-
-    .btn-whatsapp {
-        padding: 0;
-        font-size: 25px;
-    }
-
-    .map-container {
-        width: 100%
-
-    }
-
-}
-
 /*************************
 Carrossel
 **************************/
@@ -495,10 +432,6 @@ svg {
     font-size: 18px;
     color: var(--cinza-escuro);
 }
-
-
-
-
 
 
 .slick-slider .slick-track, .slick-slider .slick-list {
