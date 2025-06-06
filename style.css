@@ -104,7 +104,7 @@ body {
     height: 100%;
     margin: 0 auto;
     border-radius: 2em;
-    background-image: url(img/img-barber-fundo.PNG);
+    background-image: url(img/img-barber-fundo.jpg);
     background-size: cover;
     background-position: left 21%;
     background-repeat: no-repeat;
@@ -329,7 +329,7 @@ Cabeçalho
     height: 90vh;
     min-height: 640px;
 }
-.h-box {
+/* .h-box {
     position: relative;
     display: flex;
     align-items: center;
@@ -358,12 +358,12 @@ Cabeçalho
     max-width: 480px;
     width: 50%;
     padding: 5% 10px;
-}
-img {
+} */
+/* img {
     width: auto;
     max-width: 100%;
     height: auto;
-}
+} */
 
 /*************************
 Carrossel
@@ -375,12 +375,12 @@ Carrossel
     margin: auto;
 }
 
-.cards .slick-track {
+.cards .slick-track, .avaliacao .slick-track {
     display: flex;
     align-items: stretch;
 }
 
-.cards .slick-track .slick-slide {
+.cards .slick-track .slick-slide, .avaliacao .slick-track .slick-slide {
     height: auto;
     /* border: 1px solid red; */
 }
@@ -403,6 +403,11 @@ Carrossel
     margin: auto;
     background-color: var(--azul-petroleo);
     border-radius: 15px;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red */
 }
 
 .avaliacao-cliente {
@@ -410,12 +415,14 @@ Carrossel
     align-content: center;
     flex-wrap: wrap;
     background-color: var(--branco-base);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     height: 100%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     transition: transform 0.3s, background 0.3s;
+    /* border: 1px solid red; */
 }
 
 svg {
@@ -431,8 +438,8 @@ svg {
 .avaliacao-cliente h5 {
     font-size: 18px;
     color: var(--cinza-escuro);
+    width: 100%;
 }
-
 
 .slick-slider .slick-track, .slick-slider .slick-list {
     padding: 20px 0;
@@ -512,17 +519,5 @@ svg {
 .avaliacao .slick-track {
     display: flex;
     align-items: stretch;
-}
-
-.avaliacao .slick-track .slick-slide {
-    height: auto;
-    width: auto;
-    border: 1px solid var();
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: var(--branco-base);
-    border-radius: 10px;
 }
 
